@@ -1,0 +1,9 @@
+// IIFE => Immediately Invoked function expression
+// Este função nao toca no escopo global, logo nao havera conflito entre as constantes.
+(function(){
+    const nome = 'Luiz';
+    console.log(nome)
+}) ();
+
+const nome = 'Joao';
+console.log(nome)
