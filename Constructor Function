@@ -1,0 +1,31 @@
+// Constructor Function -> Constroe objetos
+// Factory Function -> Fabrica objetos
+// Na Constructor Function muda-se a convenção de como se escreve a função
+// Factory Function = NovaPessoa / Constructor Function = Pessoa (new)
+
+function Pessoa(nome, sobrenome){
+    // atributo privado.
+    const ID = 123456;
+const metodoInterno = function(){
+
+};
+
+// atributo ou metodos publicos, podem ser acessados fora do corpo do objeto.
+this.nome = nome
+this.sobrenome = sobrenome
+
+this.metodo = function(){
+    console.log(this.nome + ': sou um metodo')
+};
+
+}
+
+/* new cria um novo objeto vazio e faz o this apontar para esse objeto
+ e retorna o objeto para a avariavel (por isso náo é necessario o uso do return)*/
+const p1 = new Pessoa('Joao', 'Carlos')
+const p2 = new Pessoa('Eduardo', 'Villio')
+const p3 = new Pessoa('Jose', 'Alberto')
+
+console.log(p1.metodo())
+console.log(p2)
+console.log(p3)
